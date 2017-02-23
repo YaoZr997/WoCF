@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workOrder.css">
+<link rel="stylesheet" href="css/grid.css">
+<title>我的审批</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-3">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-6">我的审批</div>
+      <div class="col-xs-3">
+        <a href="javascript:void(0)" class="fr" style="font-size:14px;padding-right:12px;">
+          编辑
+        </a>
+      </div>
+    </header>
+    <section class="container marginT borderT">
+      <div class="tab_secondC">
+        <div class="tab_second">
+          <div class="col-xs-6 col-sm-6">待我审批</div>
+          <div class="col-xs-6 col-sm-6 active">审批记录</div>
+        </div>
+      </div>
+      <div class="tab_fourthC borderT">
+        <div class="tab_fourth clearfix">
+          <div class="col-xs-4 col-sm-4 saleStatus active"><a href="javasript:void(0)">厂家促销员</a></div>
+          <div class="col-xs-4 col-sm-4 saleStatus"><a href="javasript:void(0)">渠道促销员</a></div>
+          <div class="col-xs-4 col-sm-4 saleStatus"><a href="javasript:void(0)">其他管理员</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="cardC">
+          <div class="card">
+            <ul class="cardList">
+              <li>
+                <h1><img src="images/person.png" height="16" alt="">李潇潇<button>通过</button><button>拒绝</button></h1>
+                <div class="gridInfo">
+                  <div class="dataRow five"><span>员工号码：</span>18609878890</div>
+                  <div class="dataRow five"><span>员工手机：</span>18909876781</div>
+                  <div class="dataRow five"><span>业务类型：</span>补卡</div>
+                  <div class="dataRow five"><span>业务号码：</span>090</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="popup" id="single" style="display:block">
+      <div class="popupContent">
+        <div class="popupHeader">
+          <h1>确认通过？</h1>
+        </div>
+        <div class="popupBody tc clearfix">
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn btnOrange">取 消</button></div>
+          <div class="col-xs-2 col-sm-2"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn">确 认</button></div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="edit">
+      <div class="popupContent">
+        <div class="popupBody">
+          <button class="popupBtn">全部通过</button>
+          <button class="popupBtn">全部拒绝</button>
+        </div>
+        <div class="popupFooter">
+          <button class="popupBtn popupClose">取 消</button>
+        </div>
+      </div>
+    </div>
+    <div class="dropBg" style="display:block"></div>
+  </div>
+</body>
+</html>

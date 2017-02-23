@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workOrder.css">
+<link rel="stylesheet" href="css/grid.css">
+<style type="text/css">
+  .inputC{margin: 0;}
+  .bianma{position: absolute;right: 5px; top: 14px;}
+</style>
+<title>业绩登记</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-3">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-6">业绩登记</div>
+      <div class="col-xs-3">
+        <a href="javascript:void(0)" class="search fr">
+          <img src="images/2dRead.png" height="24" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="container marginT borderT">
+      <div class="tab_secondC">
+        <div class="tab_second" id="infoManage">
+          <div class="col-xs-6 col-sm-6">登记业务</div>
+          <div class="col-xs-6 col-sm-6 active">查询记录</div>
+        </div>
+      </div>
+      <div class="tab_secondC borderT">
+        <div class="tab_third clearfix" id="business">
+          <div class="col-xs-3 col-sm-3"><a href="javascript:void(0)" class="tab_business"><i></i><p>单卡</p></a></div>
+          <div class="col-xs-3 col-sm-3 active"><a href="javascript:void(0)" class="tab_business"><i style="background-image: url(images/business_heyueji.png)"></i><p>合约终端</p></a></div>
+          <div class="col-xs-3 col-sm-3"><a href="javascript:void(0)" class="tab_business"><i style="background-image: url(images/business_luoji.png)"></i><p>裸机</p></a></div>
+          <div class="col-xs-3 col-sm-3"><a href="javascript:void(0)" class="tab_business"><i style="background-image: url(images/business_kuandai.png)"></i><p>固网宽带</p></a></div>
+        </div>
+      </div>
+      <div id="salesRegister" style="display:none;">
+        <div class="cardC">
+          <div class="card" style="padding:0 10px;">
+            <div class="inputC">
+              <span>业务号码</span>
+              <input id="user" type="text" class="form-control" placeholder="请输入账户">
+            </div>
+            <div class="inputC password">
+              <span>渠道编码</span>
+              <input id="password" type="text" class="form-control" placeholder="请输入密码">
+              <a href="javascript:void(0)" class="bianma"><img src="images/bianma.png" height="16" alt=""></a>
+            </div>
+            <div class="inputC password" style="border-bottom:0;">
+              <span>受理渠道</span>
+              <div class="selector">
+                <input type="text" class="form-control" placeholder="" value="">
+                <select class="select form-control" name="" id="">
+                  <option value="0" selected=""></option>
+                  <option value="0">证件1</option>
+                  <option value="0">证件2</option>
+                  <option value="0">证件3</option>
+                  <option value="0">证件4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="form-control btn">提交</button>
+          </div>
+        </div>
+      </div>
+      <div id="salesQuery">
+        <div class="tab_fourthC">
+          <div class="tab_fourth clearfix" id="salesStatus">
+            <div class="col-xs-4 col-sm-4 saleStatus active"><a href="javasript:void(0)">业务待验证</a></div>
+            <div class="col-xs-4 col-sm-4 saleStatus"><a href="javasript:void(0)">验证已通过</a></div>
+            <div class="col-xs-4 col-sm-4 saleStatus"><a href="javasript:void(0)">验证不通过</a></div>
+          </div>
+        </div>
+        <div id="checking">
+          <div class="cardC">
+            <div class="card">
+              <ul class="cardList">
+                <li>
+                  <h1><img src="images/person.png" height="16" alt="">18688287989<a href="javascript:void(0)" class="cardBtn fr"><img src="images/edit.png" height="20" alt=""></a><a href="javascript:void(0)" class="cardBtn fr"><img src="images/delete.png" height="20" alt=""></a></h1>
+                  <div class="gridInfo clearfix">
+                    <div class="dataRow five"><span>业务量：</span>21</div>
+                    <div class="col-xs-6 col-sm-6 dataRow five"><span>应发奖励：</span><font style="color:#e84143;">3819</font>元</div>
+                    <div class="col-xs-6 col-sm-6 dataRow five"><span>实发奖励：</span><font style="color:#e84143;">89</font>元</div>
+                    <div class="col-xs-6 col-sm-6 dataRow five"><span>调整额度：</span><font style="color:#e84143;">89</font>元</div>
+                    <div class="col-xs-6 col-sm-6 dataRow five"><span>奖励类型：</span>日结奖励</div>
+                  </div>
+                  <div class="registerTime">
+                    <span>登记时间:2016-11-28</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <ul class="cardList">
+                <li>
+                  <h1><img src="images/person.png" height="16" alt="">18688287989<a href="javascript:void(0)" class="cardBtn fr"><img src="images/edit.png" height="20" alt=""></a><a href="javascript:void(0)" class="cardBtn fr"><img src="images/delete.png" height="20" alt=""></a></h1>
+                  <div class="gridInfo">
+                    <div class="clearfix">
+                      <div class="dataRow five"><span>渠道名称：</span>21</div>
+                      <div class="col-xs-6 col-sm-6 dataRow five"><span>终端串码：</span>5453432</div>
+                      <div class="col-xs-6 col-sm-6 dataRow five"><span>渠道编码：</span>834323</div>
+                      <div class="col-xs-6 col-sm-6 dataRow five"><span>受理渠道：</span>沃创富</div>
+                      <div class="col-xs-6 col-sm-6 dataRow five"><span>奖励类型：</span>日结奖励</div>
+                    </div>
+                    <div class="gridPS">
+                      <div class="dataRow six"><span style="color:#e84143;">未通过原因：</span>真实性校验失败；在7天内的销售信息中销售不存在</div>
+                    </div>
+                  </div>
+                  <div class="registerTime">
+                    <span>登记时间:2016-11-28</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="popup" id="delete">
+      <div class="popupContent">
+        <div class="popupHeader">
+          <h1>删除提示</h1>
+        </div>
+        <div class="popupBody tc clearfix">
+          <div class="bodyWords clearfix">
+            <div class="col-xs-12 col-sm-12 tc">删除后，本条记录将清除，不纳入结算</div>
+            <div class="col-xs-12 col-sm-12 tc">您确定要删除本条记录？</div>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn btnOrange">取 消</button></div>
+          <div class="col-xs-2 col-sm-2"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn">确 认</button></div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="error">
+      <div class="popupContent">
+        <div class="popupHeader">
+          <h1>错误提示</h1>
+        </div>
+        <div class="popupBody tc clearfix">
+          <div class="bodyWords clearfix tl">
+            <p>您好， 您提交的186XXXX业绩信息中串码不正确，请查证后重新录入业绩。</p>
+            <p>如有问题请联系李小溪</p>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-10 col-sm-10"><button class="popupBtnIn btnOrange">确 定</button></div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" style="display:block">
+      <div class="popupContent">
+        <div class="popupHeader">
+          <h1>编辑</h1>
+        </div>
+        <div class="popupBody tc clearfix">
+          <div class="bodyWords clearfix">
+            <div class="dataRow five"><span>业务号码</span><textarea class="form-control" style="height:30px;"></textarea></div>
+            <div class="dataRow five"><span>终端串码</span><textarea class="form-control" style="height:30px;"></textarea><a href="javascript:void(0)" class="bianma" style="top:7px;"><img src="images/bianma.png" height="16" alt=""></a></div>
+            <div class="dataRow five">
+              <span>渠道编码</span>
+              <div class="selector" style="background-color:#f0f0f0;padding-left:5px;">
+                <input type="text" class="form-control" placeholder="" value="">
+                <select class="select form-control" name="" id="">
+                  <option value="0" selected=""></option>
+                  <option value="0">证件1</option>
+                  <option value="0">证件2</option>
+                  <option value="0">证件3</option>
+                  <option value="0">证件4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn btnOrange">取 消</button></div>
+          <div class="col-xs-2 col-sm-2"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn">确 认</button></div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="submit">
+      <div class="popupContent">
+        <div class="popupHeader">
+          <h1 style="font-weight:bold;">您当前提交信息如下，请确认后提交</h1>
+        </div>
+        <div class="popupBody clearfix">
+          <div class="bodyWords clearfix">
+            <div class="dataRow seven"><span>受理渠道编码：</span>18900982812331</div>
+            <div class="dataRow seven"><span>受理渠道名称：</span>沃创富</div>
+            <div class="dataRow seven"><span>终端串码：</span>89809009</div>
+            <div class="dataRow seven"><span>业务号码：</span>18609809908</div>
+            <div class="dataRow seven"><span>业务类型：</span>办卡</div>
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn btnOrange">重新编辑</button></div>
+          <div class="col-xs-2 col-sm-2"></div>
+          <div class="col-xs-4 col-sm-4"><button class="popupBtnIn">确认提交</button></div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="dropBg" style="display:block"></div>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

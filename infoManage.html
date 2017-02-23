@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/workOrder.css">
+<link rel="stylesheet" href="css/grid.css">
+<title>信息管理</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-3">
+        <a href="javascript:void(0)" class="goBack">
+          <img src="images/arrow-left.png" height="24" alt="">
+        </a>
+      </div>
+      <div class="col-xs-6">信息管理</div>
+      <div class="col-xs-3">
+        <a href="javascript:void(0)" class="search fr">
+          <img src="images/search.png" height="24" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="container marginT borderT">
+      <div class="tab_secondC">
+        <div class="tab_second" id="infoManage">
+          <div class="col-xs-6 col-sm-6 active">信息新增</div>
+          <div class="col-xs-6 col-sm-6">信息查看</div>
+        </div>
+      </div>
+      <div id="infoAdd">
+        <div class="formWriteC">
+          <ul class="formWriteList">
+            <li>
+              <input type="text" class="form-control" placeholder="真实姓名">
+            </li>
+            <li>
+              <input type="text" class="form-control" placeholder="手机号">
+            </li>
+            <li>
+              <div class="selector">
+                <input type="text" class="form-control" placeholder="身份证" value="身份证">
+                <select class="select form-control" name="" id="">
+                  <option value="0" selected="">身份证</option>
+                  <option value="0">证件1</option>
+                  <option value="0">证件2</option>
+                  <option value="0">证件3</option>
+                  <option value="0">证件4</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <input type="text" class="form-control" placeholder="证件号码">
+            </li>
+            <li>
+              <div class="selector">
+                <input type="text" class="form-control" placeholder="手机品牌" value="Vivo">
+                <select class="select form-control" name="" id="">
+                  <option value="0" selected="">Vivo</option>
+                  <option value="0">iPhone</option>
+                  <option value="0">Samsung</option>
+                  <option value="0">Huawei</option>
+                  <option value="0">OPPO</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btns">
+            <button class="form-control btn">搜 索</button>
+        </div>
+      </div>
+      <div id="infoSee" style="display:none;">
+        <div class="cardC">
+          <div class="card">
+            <ul class="cardList">
+              <li>
+                <h1><img src="images/person.png" height="16" alt="">李潇潇<button>冻结</button></h1>
+                <div class="gridInfo">
+                  <div class="dataRow five"><span>账号状态：</span>正常</div>
+                  <div class="dataRow five"><span>员工号码：</span>809090</div>
+                  <div class="dataRow five"><span>渠道编码：</span>798909090</div>
+                  <div class="dataRow five"><span>终端串码：</span>7809089890901920</div>
+                </div>
+                <div class="registerTime">
+                  <span>登记时间:2016-11-28</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#infoManage').on('click','div',function(){
+      var t = $(this) , t1 = $('#infoAdd') , t2 = $('#infoSee');
+      if (t.hasClass('active')) {
+        return false;
+      }else{
+        t.addClass('active').siblings().removeClass('active');
+        if (t.index() === 0) {
+          t2.hide();
+          t1.show();
+        }else{
+          t1.hide();
+          t2.show();
+        }
+      }
+    })
+  })
+</script>
+</body>
+</html>

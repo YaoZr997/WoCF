@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="js/owl/owl.carousel.css">
+<link rel="stylesheet" href="js/owl/owl.theme.css">
+<style type="text/css">
+  #bannerCarousel .owl-controls{position: absolute;bottom: 0;right: 10px;width: auto;}
+  #bannerCarousel.owl-theme .owl-controls .owl-page span{background-color: #fff;}
+  #bannerCarousel.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{background-color: #ff801c;height: 8px;width: 15px;}
+  .indexContent{background-color: #fff;padding: 15px;}
+  .entry{border-bottom: 1px solid #ddd;padding-bottom: 10px;margin-bottom: 10px;}
+  .entry a{display: block;}
+  .entry a img{margin: 0 auto 5px;}
+  .indexContent>.entry:last-child{border-bottom: 0;padding: 0;margin: 0;}
+</style>
+<title>首页</title>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-8">沃创富</div>
+      <div class="col-xs-2"></div>
+    </header>
+    <section class="container marginT">
+      <div class="banner owl-carousel" id="bannerCarousel">
+        <div class="item">
+          <img src="images/banner_1.jpg" width="100%" alt="">
+        </div>
+        <div class="item">
+          <img src="images/banner_1.jpg" width="100%" alt="">
+        </div>
+        <div class="item">
+          <img src="images/banner_1.jpg" width="100%" alt="">
+        </div>
+      </div>
+      <div class="indexContent">
+        <div class="entry clearfix">
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_shenpi.png" height="44" alt="">
+              <p>我的审批</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_hecha.png" height="44" alt="">
+              <p>奖励核查</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_dengji.png" height="44" alt="">
+              <p>业绩登记</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_tongji.png" height="44" alt="">
+              <p>业绩统计</p>
+            </a>
+          </div>
+        </div>
+        <div class="entry clearfix">
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_paiming.png" height="44" alt="">
+              <p>销售排名</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_jiangli.png" height="44" alt="">
+              <p>我的奖励</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_shenqing.png" height="44" alt="">
+              <p>支付申请</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_fafang.png" height="44" alt="">
+              <p>奖励发放</p>
+            </a>
+          </div>
+        </div>
+        <div class="entry clearfix">
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_tiaoe.png" height="44" alt="">
+              <p>调额审批</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_tiaozheng.png" height="44" alt="">
+              <p>奖励调整</p>
+            </a>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <a href="javascript:void(0)" class="tc">
+              <img src="images/index_zhuce.png" height="44" alt="">
+              <p>注册审批</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footerTab clearfix">
+        <div class="col-xs-4 col-sm-4">
+          <a href="javascript:void(0)">
+            <img src="images/tab_index.png" height="20" alt="">
+            <p>首页</p>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-4">
+          <a href="message.html">
+            <img src="images/tab_message.png" height="20" alt="">
+            <p>消息</p>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-4">
+          <a href="mine.html">
+            <img src="images/tab_mine.png" height="20" alt="">
+            <p>我的</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/owl/owl.carousel.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#bannerCarousel').owlCarousel({
+      autoPlay : true,
+    });
+  })
+</script>
+</body>
+</html>
